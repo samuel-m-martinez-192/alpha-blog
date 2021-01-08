@@ -1,0 +1,5 @@
+@import 'bootstrap/dist/css/bootstrap';
+/*Sobreescribiendo una clase de bootstrap*/
+.navbar {
+    background-color: #FDF6EA !important;
+}
