@@ -19,7 +19,7 @@ class ArticlesController < ApplicationController
 
   def create
     @article = Article.new(article_params)
-    @article.user = User.first
+    @article.user = current_user
     if @article.save
       # Hay dos helpers que ayudan a mostrar mensajes en rails
       # flash o alert, alter se muestra cuando ocurren erroes por lo regular
